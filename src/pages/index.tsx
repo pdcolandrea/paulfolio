@@ -1,14 +1,19 @@
 import { useRouter } from 'next/router';
-import { useState } from 'react';
+import { useContext } from 'react';
 
 import Section from '@/components/Content/Section';
 import { Meta } from '@/layouts/Meta';
+import { ContextOfPaul } from '@/lib/context';
 import { sections } from '@/lib/sections';
 import { Main } from '@/templates/Main';
 
 const Index = () => {
-  const [currSection, setCurrSection] = useState('bio');
-  const router = useRouter();
+  const { asPath } = useRouter();
+  const { setCurrSection } = useContext(ContextOfPaul);
+
+  if (asPath) {
+    setCurrSection(asPath.substring(2));
+  }
 
   const renderSections = () => {
     return sections.map((section, key) => {
@@ -17,7 +22,6 @@ const Index = () => {
           key={key}
           Component={section.Content}
           title={section.title}
-          setSection={setCurrSection}
           center={section.center ?? false}
         />
       );

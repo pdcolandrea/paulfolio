@@ -13,7 +13,7 @@ function BioContent() {
             src="/me.png"
             width={200}
             height={200}
-            className="my-0 mx-auto hidden"
+            className="my-0 mx-auto hidden md:block"
             alt="avatar"
           />
         </div>
@@ -22,7 +22,7 @@ function BioContent() {
           Hi, my name is Paul Colandrea. I am a...
         </div>
 
-        <ul className="flex list-none flex-col gap-4">
+        <ul className="flex list-none flex-col gap-4 md:m-0 md:pl-4">
           <li>
             🖥 Computer Science & Molecular Biology student at Simon Fraser
             University
@@ -37,7 +37,7 @@ function BioContent() {
           know are hiring, I would love to hear from you!
         </div>
 
-        <div className="my-4 mx-0 flex gap-3">
+        <div className="my-4 mx-0 flex gap-3 md:flex-col">
           <Button href={'https://nickchubb.github.io/resume/'}>
             Resume <FaFileAlt />
           </Button>

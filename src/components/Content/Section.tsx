@@ -1,21 +1,22 @@
-import React, { useRef } from 'react';
+import React, { useContext, useRef } from 'react';
 
 import useOnScreen from '@/hooks/useOnScreen';
+import { ContextOfPaul } from '@/lib/context';
 
 interface ISectionProps {
   title: string;
   Component: React.FC<any> | React.ReactNode;
-  setSection: (val: string) => void;
   center?: boolean;
 }
 
 function Section(props: ISectionProps) {
-  const { title, Component, setSection, center } = props;
+  const { setCurrSection } = useContext(ContextOfPaul);
+  const { title, Component, center } = props;
   const ref = useRef(null);
   const isVisible = useOnScreen(ref);
 
   if (isVisible) {
-    setSection(title);
+    setCurrSection(title);
   }
 
   const renderComponent = () => {

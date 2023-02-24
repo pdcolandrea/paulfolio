@@ -15,11 +15,16 @@ module.exports = {
       '6xl': '4rem',
     },
     extend: {
+      width: {
+        'screen-1/3': '35vw',
+      },
       maxWidth: {
         '1/2': '50%',
         '3/4': '75%',
+        'screen-4/5': '80vw',
       },
       colors: {
+        navbg: '#181818',
         text: 'rgba(222, 222, 222, 1)',
         shadow: 'rgba(222, 222, 222, 0.3)',
         gray: {
