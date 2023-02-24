@@ -31,13 +31,14 @@ const NavItem: React.FC<INavItemProps> = (props) => {
 
   return (
     <a
+      aria-label={`Scroll to ${name}`}
       href={`#${name}`}
       onClick={handleClick}
-      className={`whitespace-nowrap text-xl hover:text-white hover:opacity-100 active:text-green-500 ${
-        isVisible && 'bg-red-500 text-2xl '
+      className={`whitespace-nowrap text-xl transition-all duration-300 hover:text-2xl hover:text-white hover:opacity-100 active:text-green-500 group-hover:text-shadow  ${
+        isVisible && `!text-2xl !text-green-500`
       }`}
     >
-      {name}
+      {`${isVisible ? '> ' : ''}${name}`}
     </a>
   );
 };

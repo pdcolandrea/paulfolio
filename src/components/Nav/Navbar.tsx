@@ -53,7 +53,7 @@ export default function Navbar() {
 
   return (
     <div
-      className={`sticky top-0 z-10 flex h-screen w-screen-1/3 flex-col items-end pt-16 pr-36 pl-16`}
+      className={`group sticky top-0 z-10 flex h-screen w-screen-1/3 flex-col items-end pt-16 pr-36 pl-16`}
     >
       <Image
         className="hidden md:block"

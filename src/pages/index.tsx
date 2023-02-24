@@ -11,7 +11,9 @@ const Index = () => {
   const { asPath } = useRouter();
   const { setCurrSection } = useContext(ContextOfPaul);
 
-  if (asPath) {
+  const path = asPath.substring(2);
+  if (path) {
+    console.log('FOUND AS PATH', path);
     setCurrSection(asPath.substring(2));
   }
 

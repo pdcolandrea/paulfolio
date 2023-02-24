@@ -12,4 +12,12 @@ export const sections: Array<ISection> = [
     Content: <BioContent />,
     center: true,
   },
+  {
+    title: 'experience',
+    Content: null,
+  },
+  {
+    title: 'personal',
+    Content: null,
+  },
 ];
