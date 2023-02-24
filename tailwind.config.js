@@ -15,7 +15,13 @@ module.exports = {
       '6xl': '4rem',
     },
     extend: {
+      maxWidth: {
+        '1/2': '50%',
+        '3/4': '75%',
+      },
       colors: {
+        text: 'rgba(222, 222, 222, 1)',
+        shadow: 'rgba(222, 222, 222, 0.3)',
         gray: {
           100: '#f7fafc',
           200: '#edf2f7',
