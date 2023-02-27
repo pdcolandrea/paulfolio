@@ -1,4 +1,5 @@
 import BioContent from '@/components/Content/Bio/Bio';
+import ExperienceContent from '@/components/Content/Experience/Experience';
 
 export interface ISection {
   title: string;
@@ -13,8 +14,8 @@ export const sections: Array<ISection> = [
     center: true,
   },
   {
-    title: 'experience',
-    Content: null,
+    title: 'experi',
+    Content: <ExperienceContent />,
   },
   {
     title: 'personal',

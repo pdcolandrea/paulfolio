@@ -1,12 +1,20 @@
 import '../styles/global.css';
 
 import type { AppProps } from 'next/app';
+import { Raleway } from 'next/font/google';
 
 import { PaulProvider } from '@/lib/context';
 
+const lato = Raleway({
+  variable: '--font-lato',
+  subsets: ['latin'],
+});
+
 const MyApp = ({ Component, pageProps }: AppProps) => (
   <PaulProvider>
-    <Component {...pageProps} />
+    <main className={`${lato.variable} font-sans`}>
+      <Component {...pageProps} />
+    </main>
   </PaulProvider>
 );
 

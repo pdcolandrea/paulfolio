@@ -18,6 +18,7 @@ specifiers:
   "@typescript-eslint/eslint-plugin": ^5.53.0
   "@typescript-eslint/parser": ^5.53.0
   autoprefixer: ^10.4.13
+  body-scroll-lock: 4.0.0-beta.0
   commitizen: ^4.3.0
   cross-env: ^7.0.3
   cssnano: ^5.1.15
@@ -60,6 +61,7 @@ specifiers:
   typescript: ^4.9.5
 
 dependencies:
+  body-scroll-lock: 4.0.0-beta.0
   next: 13.2.1_biqbaboplfbrettd7655fr4n2y
   next-seo: 5.15.0_qgtcjgzkkjtbiyvnx7d32fl5vu
   next-sitemap: 3.1.52_next@13.2.1
@@ -3335,6 +3337,13 @@ packages:
         integrity: sha512-XpNj6GDQzdfW+r2Wnn7xiSAd7TM3jzkxGXBGTtWKuSXv1xUV+azxAm8jdWZN06QTQk+2N2XB9jRDkvbmQmcRtg==,
       }
     dev: true
+
+  /body-scroll-lock/4.0.0-beta.0:
+    resolution:
+      {
+        integrity: sha512-a7tP5+0Mw3YlUJcGAKUqIBkYYGlYxk2fnCasq/FUph1hadxlTRjF+gAcZksxANnaMnALjxEddmSi/H3OR8ugcQ==,
+      }
+    dev: false
 
   /boolbase/1.0.0:
     resolution:

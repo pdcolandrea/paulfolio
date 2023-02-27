@@ -10,7 +10,7 @@ function Button(props: IButtonProps) {
   return (
     <a
       href={href}
-      className="flex items-center justify-center gap-2 rounded py-2 px-5 text-text hover:bg-red-500"
+      className="hidden items-center justify-center gap-2 rounded bg-[#1F1F1F] py-2 px-5 text-text duration-300 hover:scale-[0.98] hover:bg-[#292929] active:bg-[#333333] active:text-green-500 md:flex"
     >
       {children}
     </a>

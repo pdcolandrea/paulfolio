@@ -4,7 +4,7 @@ import { FaEnvelope, FaFileAlt, FaLinkedin } from 'react-icons/fa';
 
 import Button from '@/components/Button';
 
-function BioContent() {
+function ExperienceContent() {
   return (
     <>
       <div className="flex max-w-3xl flex-col gap-8 text-xl">
@@ -18,19 +18,14 @@ function BioContent() {
           />
         </div>
 
-        <div className="text-justify">
-          Hi, my name is Paul Colandrea. I am a...
-        </div>
+        <div className="text-justify">My experience</div>
 
         <ul className="flex list-none flex-col gap-4">
           <li>
-            🖥 Computer Science Graduate from the{' '}
-            <b>University of Central Florida</b>
+            🖥 Computer Science Graduate from University of Central Florida
           </li>
 
-          <li>
-            👨🏼‍💼 Lead Software Engineer @ <b>Byte Federal, Inc.</b>
-          </li>
+          <li>👨🏼‍💼 Lead Software Engineer @ Byte Federal, Inc. </li>
         </ul>
 
         <div className="text-justify">
@@ -55,4 +50,4 @@ function BioContent() {
   );
 }
 
-export default BioContent;
+export default ExperienceContent;

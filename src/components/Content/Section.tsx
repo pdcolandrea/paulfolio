@@ -2,6 +2,7 @@ import React, { useContext, useRef } from 'react';
 
 import useOnScreen from '@/hooks/useOnScreen';
 import { ContextOfPaul } from '@/lib/context';
+import { scrollToSection } from '@/lib/selectors';
 
 interface ISectionProps {
   title: string;
@@ -16,6 +17,7 @@ function Section(props: ISectionProps) {
   const isVisible = useOnScreen(ref);
 
   if (isVisible) {
+    console.log('setting current title', title);
     setCurrSection(title);
   }
 
@@ -26,11 +28,13 @@ function Section(props: ISectionProps) {
   };
 
   const getLink = () => {
-    // scroll to section
+    scrollToSection(title);
   };
 
   return (
     <div
+      id={title}
+      ref={ref}
       className={`mb-12 min-h-screen w-full px-0 pt-0 pb-12 transition ${
         center && 'flex flex-col justify-center'
       }`}
@@ -39,7 +43,7 @@ function Section(props: ISectionProps) {
         onClick={getLink}
         className="flex cursor-pointer items-center gap-6 hover:block"
       >
-        <h2 className="my-12 mx-0 max-w-fit border-b border-b-shadow pb-2 transition-colors">
+        <h2 className="my-12 mx-0 max-w-fit border-b border-b-shadow pb-2 text-2xl font-bold transition-all">
           {title}
         </h2>
 
