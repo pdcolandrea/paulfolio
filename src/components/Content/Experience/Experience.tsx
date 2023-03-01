@@ -35,13 +35,13 @@ function ExperienceContent() {
         </div>
 
         <div className="my-4 mx-0 flex gap-3">
-          <Button href={'https://nickchubb.github.io/resume/'}>
+          <Button href={'/resume'}>
             Resume <FaFileAlt />
           </Button>
-          <Button href={'https://www.linkedin.com/in/nickrchubb/'}>
+          <Button href={'https://www.linkedin.com/in/pdcolandrea/'}>
             Linkedin <FaLinkedin />
           </Button>
-          <Button href={'mailto://nick@nickchubb.ca'}>
+          <Button href={'mailto://colandreapaul@gmail.com'}>
             Email Me <FaEnvelope />
           </Button>
         </div>

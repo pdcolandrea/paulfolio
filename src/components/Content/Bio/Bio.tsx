@@ -34,19 +34,20 @@ function BioContent() {
         </ul>
 
         <div className="text-justify">
-          I am an aspiring <b>full-stack developer</b> and I will be seeking
-          employment opportunities starting Summer 2023. If you or someone you
-          know are hiring, I would love to hear from you!
+          At the moment, I am thoroughly enjoying my work as a{' '}
+          <b>Software Engineer</b> in the fintech industry. The dynamic nature
+          of the field presents various challenges, which I find stimulating and
+          rewarding to overcome.
         </div>
 
         <div className="my-4 mx-0 flex gap-3">
-          <Button href={'https://nickchubb.github.io/resume/'}>
+          <Button href={'/resume'}>
             Resume <FaFileAlt />
           </Button>
-          <Button href={'https://www.linkedin.com/in/nickrchubb/'}>
+          <Button href={'https://www.linkedin.com/in/pdcolandrea/'}>
             Linkedin <FaLinkedin />
           </Button>
-          <Button href={'mailto://nick@nickchubb.ca'}>
+          <Button href={'mailto://colandreapaul@gmail.com'}>
             Email Me <FaEnvelope />
           </Button>
         </div>

@@ -14,7 +14,7 @@ export const sections: Array<ISection> = [
     center: true,
   },
   {
-    title: 'experi',
+    title: 'experience',
     Content: <ExperienceContent />,
   },
   {
