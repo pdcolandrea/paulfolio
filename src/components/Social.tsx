@@ -9,22 +9,22 @@ import {
 const links = [
   {
     title: 'Linkedin',
-    href: '',
+    href: 'https://www.linkedin.com/in/pdcolandrea/',
     icon: <FaLinkedin />,
   },
   {
     title: 'Github',
-    href: '',
+    href: 'https://github.com/pdcolandrea',
     icon: <FaGithub />,
   },
   {
     title: 'Email',
-    href: '',
+    href: 'mailto:colandreapaul@gmail.com',
     icon: <FaEnvelopeOpen />,
   },
   {
     title: 'Resume',
-    href: '',
+    href: '/resume.pdf',
     icon: <FaFileAlt />,
   },
 ];
