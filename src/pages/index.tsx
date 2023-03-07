@@ -13,7 +13,7 @@ const Index = () => {
 
   const path = asPath.substring(2);
   if (path) {
-    console.log('FOUND AS PATH', path);
+    console.log('FOUND AS PATHs', path);
     setCurrSection(asPath.substring(2));
   }
 
