@@ -1,8 +1,5 @@
 import Image from 'next/image';
 import React from 'react';
-import { FaEnvelope, FaFileAlt, FaLinkedin } from 'react-icons/fa';
-
-import Button from '@/components/Button';
 
 function ExperienceContent() {
   return (
@@ -18,9 +15,9 @@ function ExperienceContent() {
           />
         </div>
 
-        <div className="text-justify">My experience</div>
+        <div className="text-justify">coming soon</div>
 
-        <ul className="flex list-none flex-col gap-4">
+        {/* <ul className="flex list-none flex-col gap-4">
           <li>
             🖥 Computer Science Graduate from University of Central Florida
           </li>
@@ -32,8 +29,8 @@ function ExperienceContent() {
           I am an aspiring <b>full-stack developer</b> and I will be seeking
           employment opportunities starting Summer 2023. If you or someone you
           know are hiring, I would love to hear from you!
-        </div>
-
+        </div> */}
+        {/* 
         <div className="my-4 mx-0 flex gap-3">
           <Button href={'/resume'}>
             Resume <FaFileAlt />
@@ -44,7 +41,7 @@ function ExperienceContent() {
           <Button href={'mailto://colandreapaul@gmail.com'}>
             Email Me <FaEnvelope />
           </Button>
-        </div>
+        </div> */}
       </div>
     </>
   );

@@ -19,6 +19,6 @@ export const sections: Array<ISection> = [
   },
   {
     title: 'personal',
-    Content: null,
+    Content: <ExperienceContent />,
   },
 ];
