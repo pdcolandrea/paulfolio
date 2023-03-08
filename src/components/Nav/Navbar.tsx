@@ -2,6 +2,7 @@
 import { disableBodyScroll, enableBodyScroll } from 'body-scroll-lock';
 import Image from 'next/image';
 import React, { useRef, useState } from 'react';
+import { FaCaretRight } from 'react-icons/fa';
 
 import useClickOutside from '@/hooks/useClickOutside';
 import { sections } from '@/lib/sections';
@@ -61,7 +62,9 @@ export default function Navbar() {
   return (
     <div
       ref={navRef}
-      className={`group sticky top-0 z-10 flex h-screen w-screen-1/3 flex-col items-end pt-16 pr-36 pl-16`}
+      className={`md:group fixed top-0 right-0 h-full w-fit max-w-screen-4/5 bg-navbg p-12 duration-500 md:sticky md:top-0 md:z-10 md:flex md:h-screen md:w-screen-1/3 md:flex-col md:items-end md:bg-inherit md:pt-16 md:pr-36 md:pl-16 ${
+        isHidden && '-right-full'
+      }`}
     >
       <Image
         className="hidden md:block"
@@ -77,6 +80,14 @@ export default function Navbar() {
         {renderMenu()}
       </div>
       <Social />
+      <a
+        onClick={toggle}
+        className="!active:text-green-500 fixed bottom-12 right-12 flex h-16 w-16 cursor-pointer items-center justify-center rounded-full bg-[#292929] text-text shadow-md hover:scale-[0.98] hover:bg-[#383838] hover:transition-transform active:bg-[#424242] md:hidden"
+      >
+        <FaCaretRight
+          className={`transition-all duration-500 ${isHidden && 'rotate-180'}`}
+        />
+      </a>
     </div>
   );
 }

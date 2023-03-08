@@ -10,7 +10,7 @@ function BioContent() {
       <div className="flex max-w-3xl flex-col gap-8 text-xl">
         <div className="w-full">
           <Image
-            src="/me.png"
+            src="/me2.png"
             width={200}
             height={200}
             className="my-0 mx-auto hidden"

@@ -31,7 +31,7 @@ const links = [
 
 const Social = () => {
   return (
-    <div className="flex flex-row gap-3 text-xl text-text hover:text-green-500 group-hover:text-shadow">
+    <div className="!hover:text-green-500 flex flex-row justify-end gap-3 text-xl text-text duration-300 group-hover:text-shadow">
       {links.map((link, index) => {
         return (
           <a
