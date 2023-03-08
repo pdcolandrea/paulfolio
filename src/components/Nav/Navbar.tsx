@@ -62,8 +62,8 @@ export default function Navbar() {
   return (
     <div
       ref={navRef}
-      className={`md:group fixed top-0 right-0 h-full w-fit max-w-screen-4/5 bg-navbg p-12 duration-500 md:sticky md:top-0 md:z-10 md:flex md:h-screen md:w-screen-1/3 md:flex-col md:items-end md:bg-inherit md:pt-16 md:pr-36 md:pl-16 ${
-        isHidden && '-right-full'
+      className={`group fixed top-0 right-0 h-full w-fit max-w-screen-4/5 bg-navbg p-12 duration-500 md:sticky md:top-0 md:z-10 md:flex md:h-screen md:w-screen-1/3 md:flex-col md:items-end md:bg-inherit md:pt-16 md:pr-36 md:pl-16 ${
+        isHidden && '!-right-full'
       }`}
     >
       <Image
