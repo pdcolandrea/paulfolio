@@ -1,5 +1,6 @@
 import '../styles/global.css';
 
+import { Analytics } from '@vercel/analytics/react';
 import type { AppProps } from 'next/app';
 import { Raleway } from 'next/font/google';
 
@@ -14,6 +15,7 @@ const MyApp = ({ Component, pageProps }: AppProps) => (
   <PaulProvider>
     <main className={`${lato.variable} font-sans`}>
       <Component {...pageProps} />
+      <Analytics />
     </main>
   </PaulProvider>
 );
