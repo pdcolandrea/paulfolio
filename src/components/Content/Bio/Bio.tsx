@@ -13,7 +13,7 @@ function BioContent() {
             src="/me2.png"
             width={200}
             height={200}
-            className="my-0 mx-auto hidden"
+            className="my-0 mx-auto block md:hidden"
             alt="avatar"
           />
         </div>
