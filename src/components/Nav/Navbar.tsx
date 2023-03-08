@@ -72,6 +72,7 @@ export default function Navbar() {
         width={200}
         height={200}
         alt="avatar"
+        priority
       />
       <h1 className="mb-0 whitespace-nowrap text-3xl font-bold">
         Paul Colandrea
